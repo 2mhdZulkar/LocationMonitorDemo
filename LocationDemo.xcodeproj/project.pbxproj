@@ -16,6 +16,13 @@
 		841DA43326E0003900730B08 /* LocationDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841DA43226E0003900730B08 /* LocationDemoTests.swift */; };
 		841DA43E26E0003900730B08 /* LocationDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841DA43D26E0003900730B08 /* LocationDemoUITests.swift */; };
 		841DA44C26E002DA00730B08 /* UserMonitorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841DA44B26E002DA00730B08 /* UserMonitorViewController.swift */; };
+		841DA45226E0070200730B08 /* UserMoniterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841DA45126E0070200730B08 /* UserMoniterViewModel.swift */; };
+		841DA45526E007F600730B08 /* LocationMonitorRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841DA45426E007F600730B08 /* LocationMonitorRequest.swift */; };
+		841DA45726E0080300730B08 /* LocationMonitorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841DA45626E0080300730B08 /* LocationMonitorResponse.swift */; };
+		841DA45A26E00A8B00730B08 /* LocationResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841DA45926E00A8B00730B08 /* LocationResource.swift */; };
+		841DA45D26E00AF600730B08 /* HttpUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841DA45C26E00AF600730B08 /* HttpUtility.swift */; };
+		841DA46026E00B3B00730B08 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841DA45F26E00B3B00730B08 /* Constants.swift */; };
+		841DA46326E0171700730B08 /* ViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841DA46226E0171700730B08 /* ViewControllerExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +58,13 @@
 		841DA43D26E0003900730B08 /* LocationDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDemoUITests.swift; sourceTree = "<group>"; };
 		841DA43F26E0003900730B08 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		841DA44B26E002DA00730B08 /* UserMonitorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserMonitorViewController.swift; sourceTree = "<group>"; };
+		841DA45126E0070200730B08 /* UserMoniterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserMoniterViewModel.swift; sourceTree = "<group>"; };
+		841DA45426E007F600730B08 /* LocationMonitorRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationMonitorRequest.swift; sourceTree = "<group>"; };
+		841DA45626E0080300730B08 /* LocationMonitorResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationMonitorResponse.swift; sourceTree = "<group>"; };
+		841DA45926E00A8B00730B08 /* LocationResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationResource.swift; sourceTree = "<group>"; };
+		841DA45C26E00AF600730B08 /* HttpUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpUtility.swift; sourceTree = "<group>"; };
+		841DA45F26E00B3B00730B08 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		841DA46226E0171700730B08 /* ViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +115,8 @@
 		841DA41726E0003600730B08 /* LocationDemo */ = {
 			isa = PBXGroup;
 			children = (
+				841DA45E26E00B2200730B08 /* Constants */,
+				841DA45826E00A7300730B08 /* DataResource */,
 				841DA45026E002F900730B08 /* Services */,
 				841DA44F26E002F400730B08 /* Models */,
 				841DA44E26E002EC00730B08 /* ViewModels */,
@@ -145,6 +161,7 @@
 		841DA44E26E002EC00730B08 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				841DA45126E0070200730B08 /* UserMoniterViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -152,6 +169,7 @@
 		841DA44F26E002F400730B08 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				841DA45326E007E500730B08 /* LocationMonitorModel */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -159,8 +177,51 @@
 		841DA45026E002F900730B08 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				841DA46126E016EB00730B08 /* Extensions */,
+				841DA45B26E00ADB00730B08 /* HttpUtility */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		841DA45326E007E500730B08 /* LocationMonitorModel */ = {
+			isa = PBXGroup;
+			children = (
+				841DA45426E007F600730B08 /* LocationMonitorRequest.swift */,
+				841DA45626E0080300730B08 /* LocationMonitorResponse.swift */,
+			);
+			path = LocationMonitorModel;
+			sourceTree = "<group>";
+		};
+		841DA45826E00A7300730B08 /* DataResource */ = {
+			isa = PBXGroup;
+			children = (
+				841DA45926E00A8B00730B08 /* LocationResource.swift */,
+			);
+			path = DataResource;
+			sourceTree = "<group>";
+		};
+		841DA45B26E00ADB00730B08 /* HttpUtility */ = {
+			isa = PBXGroup;
+			children = (
+				841DA45C26E00AF600730B08 /* HttpUtility.swift */,
+			);
+			path = HttpUtility;
+			sourceTree = "<group>";
+		};
+		841DA45E26E00B2200730B08 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				841DA45F26E00B3B00730B08 /* Constants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		841DA46126E016EB00730B08 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				841DA46226E0171700730B08 /* ViewControllerExtension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -293,10 +354,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				841DA45726E0080300730B08 /* LocationMonitorResponse.swift in Sources */,
 				841DA44C26E002DA00730B08 /* UserMonitorViewController.swift in Sources */,
+				841DA45A26E00A8B00730B08 /* LocationResource.swift in Sources */,
+				841DA45D26E00AF600730B08 /* HttpUtility.swift in Sources */,
+				841DA45526E007F600730B08 /* LocationMonitorRequest.swift in Sources */,
 				841DA41926E0003600730B08 /* AppDelegate.swift in Sources */,
 				841DA41B26E0003600730B08 /* SceneDelegate.swift in Sources */,
+				841DA46326E0171700730B08 /* ViewControllerExtension.swift in Sources */,
+				841DA46026E00B3B00730B08 /* Constants.swift in Sources */,
 				841DA42326E0003600730B08 /* LocationDemo.xcdatamodeld in Sources */,
+				841DA45226E0070200730B08 /* UserMoniterViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
